@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // let frutas = ["laranja", "uva", "Limão"];
+
+
+    // frutas.unshift("kiwi", 'morango'); // insere elementos no inicio do array
+    // frutas.push('abacate'); // insere elemento no final do array
+    // frutas[frutas.length] = 'maça'; // insere elemento no final do array
+    // frutas[3] = 'melancia'; // troca o elemento na posição 3 pelo valor atribuido
+    // frutas.splice(2, 0, "tomate") // insere o elemento na posição 2 preservando os outros elementos
+    // frutas.splice(2, 1, "abacaxi") // substitui o elemento da posição 2
+    // //delete frutas[0]; // deleta o elemento mas sem reorganizar o array, ex: na posição 0 aparecerá "empty"
+    // //frutas.pop(); // deleta o elemento da ultima posção do array
+    // //frutas.shift(); // deleta um elemento do inicio do array reorganizando o array
+    // frutas.splice(4, 2);/* eliminando elementos do array, neste caso o primeiro parametro indica apartir de qual indice
+    // e o segundo parametro indica quantos elementos eliminar*/
+
+    // //frutas.length = 2 // atribuindo o tamanho do array nisso ele passará a exibir apenas os 2 primeiros elementos
+
+
+    // console.log(frutas)
+
+    // let num = [12, 55, 99, 89, "banana"];
+    // let num2 = [01, 85, 33, 77, 106];
+
+    // let numbers = num.concat(num2); // neste caso estou juntando os 2 arrays numericos
+    // numbers.sort(); // metodo que põe em ordem crescente um array
+    // numbers.reverse(); // metodo que inverte a ordem de apresentação do array
+    // // este metodo aplicadio após o .sort mostra o array em ordem decrescente
+    // numbers = numbers.filter((x) => (x > 20 && x < 90)); /* usando o metodo .filter para exibir nos elementos do array
+    // que são maiores que 20 e menores que 90*/
+
+
+    // console.log(num);
+
+    // let N0 = [];
+
+    // N0[0] = validN1();
+    // N0[1] = validN2();
+
+    // function validN1() {
+
+    //   let firstNumber = prompt("insira o 1° numero: ");
+
+    //   if (firstNumber < 0 || firstNumber > 0 && firstNumber % 1 !== 0) {
+    //     alert('Numero inválido')
+    //     return validN1();
+    //   } else {
+    //     return firstNumber;
+    //   }
+    // }
+    // function validN2() {
+
+    //   let secondNumber = prompt('insira o 2° numero')
+
+    //   if (secondNumber < 0 || secondNumber > 0 && secondNumber % 1 !== 0) {
+    //     alert("numero inválido");
+    //     return validN2();
+    //   } else {
+    //     return secondNumber
+    //   }
+    // }
+
+    // let divResult = div(N0)
+
+    // function div(N0) {
+    //   let result = 0
+    //   result = N0[0] / N0[1]
+    //   return result
+    // }
+    // alert(`A divisão dos numeros inseridos é: ${divResult}`)
+
+    // console.log(divResult);
+
+    /////////////////////////////////////
+
+    let bag = ["card", "cash", "alcool"]
+
+    for (let i = 0; i < bag.length; i++) {
+      console.log(`${i + 1}. ${bag[i]}`);
+      if (bag[i] == "cash") break
+    }
+
+    //for in
+
+    let family = [
+      {
+        name: "Douglas",
+        paper: "pai"
+      },
+      {
+        name: "Letycia",
+        paper: "mãe"
+      },
+      {
+        name: "Leia",
+        paper: "cat"
+      },
+      {
+        name: "Brie",
+        paper: "cat"
+      },
+    ]
+
+    for (let menber in family) {
+      console.log(family[menber]);
+    }
+
+  </script>
+</body>
+
+</html>
